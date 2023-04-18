@@ -1,0 +1,21 @@
+<div class="login-wrap">
+  <div
+    class="item"
+    *ngFor="let item of items; let index = index"
+    [style]="{
+        position: 'absolute',
+        width: item.size + 'px',
+        height: item.size+ 'px',
+        left: item.left+ 'px',
+        bottom: item.bottom+ 'px',
+        'background-color': item.background,
+        'z-index': item.zIndex,
+        'box-shadow': '0px 0px 20px' + item.background,
+        opacity: item.opacity,
+        transform: 'translate(0, ' + item.y + '%)',
+      
+    }"
+  ></div>
+
+  <div class="login" (click)="onSubmit()">登录</div>
+</div>

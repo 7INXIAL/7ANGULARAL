@@ -1,0 +1,17 @@
+/* 主题变量 */
+/* :root.sunny */
+:root {
+  --color-1: #186cb8;
+  --color-2: #2a9a9f;
+  --color-3: #f1b211;
+  --color-4: #e83611;
+  --color-5: #f9002f;
+}
+
+:root.night {
+  --color-3: #186cb8;
+  --color-1: #2a9a9f;
+  --color-2: #f1b211;
+  --color-5: #e83611;
+  --color-4: #f9002f;
+}

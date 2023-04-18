@@ -1,0 +1,13 @@
+<!-- 作布局拦截 -->
+<div [ngClass]="['global-wrap', (single && 'single') || '']">
+  <!-- 单布局 -->
+  <ng-template> It depends on what you do with it. </ng-template>
+  <div *ngIf="single" class="module-wrap">
+    <router-outlet></router-outlet>
+  </div>
+
+  <!-- 内容布局 -->
+  <div *ngIf="!single" class="module-wrap">
+    <router-outlet> </router-outlet>
+  </div>
+</div>

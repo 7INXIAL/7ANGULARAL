@@ -1,0 +1,97 @@
+.helloworld-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 24px;
+    position: relative;
+    user-select: none;
+    background: linear-gradient(
+      219deg,
+      var(--color-4) 19%,
+      transparent 19%,
+      transparent 20%,
+      var(--color-3) 20%,
+      var(--color-3) 39%,
+      transparent 39%,
+      transparent 40%,
+      var(--color-2) 40%,
+      var(--color-2) 59%,
+      transparent 59%,
+      transparent 60%,
+      var(--color-1) 60%,
+      var(--color-1) 79%,
+      transparent 79%,
+      transparent 80%,
+      var(--color-5) 80%
+    );
+    h1 {
+      margin-top: 0;
+      text-align: center;
+      white-space: break-spaces;
+      font-size: 96px;
+      text-transform: uppercase;
+      background: linear-gradient(
+        219deg,
+        var(--color-1) 19%,
+        transparent 19%,
+        transparent 20%,
+        var(--color-5) 20%,
+        var(--color-5) 39%,
+        transparent 39%,
+        transparent 40%,
+        var(--color-4) 40%,
+        var(--color-4) 59%,
+        transparent 59%,
+        transparent 60%,
+        var(--color-3) 60%,
+        var(--color-3) 79%,
+        transparent 79%,
+        transparent 80%,
+        var(--color-2) 80%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    .shu {
+      display: inline-block;
+      width: 6px;
+      height: 72px;
+      background-color: #fff;
+      animation: 0.5s linear 0s infinite alternate flashing;
+    }
+    .iconfont-wrap {
+      width: 100%;
+      height: fit-content;
+      display: flex;
+      justify-content: space-evenly;
+      position: absolute;
+      top: 10%;
+      .iconfont {
+        font-size: 48px;
+        cursor: pointer;
+        &.icon-dengchu {
+          color: var(--color-4);
+        }
+        &.icon-huanfu {
+          color: #fff;
+        }
+        &.icon-language {
+          color: var(--color-4);
+        }
+        &.icon-github {
+          color: #000;
+        }
+      }
+    }
+  }
+  @keyframes flashing {
+    0% {
+      background-color: transparent;
+    }
+    100% {
+      background-color: #fff;
+    }
+  }
