@@ -1,21 +1,18 @@
 <div class="helloworld-wrap module">
-    <div class="iconfont-wrap">
-      <span
-        class="iconfont icon-dengchu"
-        (click)="handleClick('dengchu')"
-      ></span>
-      <span class="iconfont icon-huanfu" (click)="handleClick('huanfu')"></span>
-      <span
-        class="iconfont icon-language"
-        (click)="handleClick('language')"
-      ></span>
-      <span class="iconfont icon-github" (click)="handleClick('github')"></span>
-    </div>
-    <h1 i18n>
-      <!-- {{ $t(store.text) }} -->
-      你好世界
-      <span class="shu"></span>
-    </h1>
-
-<router-outlet></router-outlet>
+  <div class="iconfont-wrap">
+    <span class="iconfont icon-dengchu" (click)="handleClick('dengchu')"></span>
+    <span class="iconfont icon-huanfu" (click)="handleClick('huanfu')"></span>
+    <span
+      class="iconfont icon-language"
+      (click)="handleClick('language')"
+    ></span>
+    <span class="iconfont icon-github" (click)="handleClick('github')"></span>
   </div>
+  <h1>
+    <!-- {{ $t(store.text) }} -->
+    <ng-container i18n="@@4387037738301581560">Hello ANGULAR</ng-container>
+    <span class="shu"></span>
+  </h1>
+
+  <router-outlet></router-outlet>
+</div>
